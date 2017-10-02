@@ -182,6 +182,19 @@ main {
   padding-bottom: 2rem;
 }
 
+.banner button {
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  background-color: #AD2A3C;
+  height: 3rem;
+  border: none;
+}
+
+.banner button:hover {
+  font-weight: bold;
+}
+
 /* --------------- features --------------- */
 .features {
   display: flex;
@@ -306,58 +319,132 @@ footer a {
   color: inherit;
 }
 
+/* --------------- desktops--------------- */
 
-/* --------------- @media --------------- */
-
-@media only screen and (min-width: 600px) { /*--> for screens with a minimum width of 600px*/
-  .media {
+@media only screen and (min-width: 1024px) {
+  .mobile { /*remove mobile specific elements */
     display: none;
 
   }
 
 }
 
-/* --------------- for mobile devices --------------- */
 
-@media only screen and (max-width: 600px) { /*--> for screens with a maximum width of 600px*/
+/* --------------- for tablets (landscape mode)--------------- */
 
-  .desktop {
-    display: none;
-  }
+@media only screen and (max-width: 1024px) {
 
-  .logo {
+  .desktop { /*remove desktop specific elements */
     display: none;
   }
 
   nav {
-    width: 100%;
+    width: 70%;
     justify-content: space-between;
   }
 
   .banner {
     flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    height: auto;
   }
 
   .banner img {
     max-width: 100%;
     padding: 0;
+    height: auto;
+    width: 100%;
   }
 
-  .feature-grid {
-  flex-basis: 100%;
+  .banner-content {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    align-content: flex-end;
+    margin-bottom: 3rem;
+  }
+
+  .banner button {
+    width: 50%;
+  }
+
+  .column-grid { /*column styled content section*/
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    margin: none;
+    padding: none;
+    margin-right: 1rem;
   }
 
   .feature img {
     max-width: 100%;
-    padding-right: 0;
   }
 
-  .feature  {
-    display: flex;
+  .feature:last-of-type { /*adds margin to distinguish feature from next section'*/
+    margin-bottom: 2rem;
+  }
+
+  .course-grid p {
+    font-size: 0.8rem;
+  }
+
+  .thesis-main {
+    flex-direction: column;
+  }
+}
+
+/* --------------- for mobile devices --------------- */
+
+@media only screen and (max-width: 470px) { /*--> for screens with a maximum width of 600px*/
+
+  .logo {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .banner button {
+    width: 100%;
+  }
+
+  .feature {
     flex-direction: column;
   }
 
+  .feature img {
+    width: 100%;
+  }
 
-}
+  .feature-content {
+    margin-top: 1rem;
+  }
+
+  .course-list {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .course-list-item {
+    background-color: #D1686E;
+    border-radius: 5%;
+    margin: 0.2rem 0.2rem;
+  }
+
+  .course-list-item p {
+    padding: 0.5rem;
+    margin: 0.25rem;
+  }
 
 }

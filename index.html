@@ -21,7 +21,7 @@
           <p><a href="#">Sign in</a></p>
       </nav>
 
-      <nav class="media"><!-- mobile navigation -->
+      <nav class="mobile"><!-- mobile navigation for tablet and smartphones-->
               <a href="#"><img src="./resources/images/ic-logo.svg" alt="Colmar Academy"></a>
               <a href="#"><img src="./resources/images/ic-on-campus.svg" alt=""></a>
               <a href="#"><img src="./resources/images/ic-online.svg" alt=""></a>
@@ -40,7 +40,10 @@
         <div class="banner-content">
           <h2>Learn something new everyday</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <a href="#">Start here</a>
+          <div class="clickable">
+          <a href="URL"> </a>
+          <button type="button" name="button">Start here</button>
+          </div>
         </div>
       </section>
 
@@ -59,6 +62,7 @@
           <div class="feature clickable">
             <a href="URL OF TARGET"> </a>
             <img class="desktop" src="./resources/images/information-orientation.jpg" alt="Students walking together in a row">
+            <img class="mobile" src="./resources/images/information-orientation-mobile.jpg" alt="Students walking together in a row">
             <div class="feature-content">
               <h3>Orientation date</h3>
               <p>Tue 10/11 &amp; Wed 10/12: 8am-rpm</p>
@@ -69,6 +73,7 @@
           <div class="feature clickable">
             <a href="URL OF TARGET"> </a>
             <img class="desktop" src="./resources/images/information-campus.jpg" alt="Study room with students reading">
+            <img class="mobile" src="./resources/images/information-campus-mobile.jpg" alt="Study room with students reading">
             <div class="feature-content">
               <h3>Our campus</h3>
               <p>Find which campus is close by you</p>
@@ -79,6 +84,7 @@
           <div class="feature color-theme clickable">
             <a href="URL OF TARGET"> </a>
             <img class="desktop" src="./resources/images/information-guest-lecture.jpg" alt="Students walking together in a row">
+            <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Students walking together in a row">
             <div class="feature-content">
               <h3>Our guest lecture</h3>
               <p>Join a keynote with Oliver Sack about music in medical treatment</p>
@@ -92,7 +98,7 @@
       <section class="courses color-theme">
         <h2>Start learning</h2>
 
-        <div class="course-grid">
+        <div class="course-grid desktop">
 
           <div class="course-vignette clickable">
             <a href="URL OF TARGET"> </a>
@@ -155,7 +161,7 @@
           </div><!-- end vignette -->
 
           <div class="course-vignette clickable">
-              <a href="URL OF TARGET"> </a>
+            <a href="URL OF TARGET"> </a>
             <img src="./resources/images/course-marketing.jpg">
             <div class="course-vignette-content">
               <h3>Marketing</h3>
@@ -165,9 +171,33 @@
               </div>
             </div>
           </div><!-- end vignette -->
+        </div> <!--end of course grid for desktop-->
 
-
-        </div>
+        <div class="course-list mobile">
+          <div class="course-list-item clickable">
+            <a href="URL OF TARGET"> </a>
+            <p>Software engineering</p>
+          </div>
+          <div class="course-list-item clickable">
+            <a href="URL OF TARGET"> </a>
+            <p>Computer art</p>
+          </div>
+          <div class="course-list-item clickable">
+            <a href="URL OF TARGET"> </a>
+            <p>Design</p>
+          </div>
+          <div class="course-list-item clickable">
+            <a href="URL OF TARGET"> </a>
+            <p>Data</p>
+          </div>
+          <div class="course-list-item clickable">
+            <a href="URL OF TARGET"> </a>
+            <p>Business</p>
+          </div>
+          <div class="course-list-item clickable">
+            <a href="URL OF TARGET"> </a>
+            <p>Marketing</p>
+          </div>
       </section>
 
       <!-- Thesis Section-------->
@@ -179,14 +209,15 @@
               <source src="./resources/videos/thesis.mp4" type="video/mp4">
                 Your browser does not support video.
               </video>
-              <h2>Reimagine urban</h2>
-              <blockquote>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</blockquote>
+              <h2 class="desktop">Reimagine urban</h2>
+              <blockquote class="desktop">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</blockquote>
           </div>
 
-          <div class="column-grid">
+          <div class="column-grid desktop">
             <div class="feature clickable">
               <a href="URL OF TARGET"> </a>
               <img class="desktop" src="./resources/images/thesis-fisma.jpg" alt="Thesis fisma">
+              <img class="mobile" src="./resources/images/thesis-fisma.jpg" alt="Thesis fisma">
               <div class="feature-content">
                 <h3>Fisma: Design and Prototype</h3>
                 <p>Designer Showcase of new protorype product</p>
@@ -196,6 +227,7 @@
             <div class="feature color-theme clickable">
               <a href="URL OF TARGET"> </a>
               <img class="desktop" src="./resources/images/thesis-now-and-then.jpg" alt="Thesis history">
+              <img class="mobile" src="./resources/images/thesis-now-and-then.jpg" alt="Thesis history">
               <div class="feature-content">
                 <h3>Now and then</h3>
                 <p>Research study about New York</p>
