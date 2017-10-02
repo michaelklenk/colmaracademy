@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Colmar Academy</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
   </head>
   <body>
     <header>
@@ -11,184 +13,202 @@
           <img src="resources/images/ic-logo.svg" alt="Logo">
           <h1><strong>Colmar</strong>Academy</h1>
       </div>
-      <nav>
-          <p>On campus</p>
-          <p>Online</p>
-          <p>For Companies</p>
-          <p>Sign in</p>
+
+      <nav class="desktop">
+          <p><a href="#">On campus</a></p>
+          <p><a href="#">Online</a></p>
+          <p><a href="#">For Companies</a></p>
+          <p><a href="#">Sign in</a></p>
       </nav>
-    </header>
+
+      <nav class="media"><!-- mobile navigation -->
+              <a href="#"><img src="./resources/images/ic-logo.svg" alt="Colmar Academy"></a>
+              <a href="#"><img src="./resources/images/ic-on-campus.svg" alt=""></a>
+              <a href="#"><img src="./resources/images/ic-online.svg" alt=""></a>
+              <a href="#"><img src="./resources/images/ic-login.svg" alt=""></a>
+      </div>
+
+</header>
+
+<!-- Main-------->
 
     <main>
 
-
-      <section class="gray" id="banner">
-        <div class="container">
-          <div class="box-left">
-            <div class="case-banner">
-              <img src="resources/images/banner.jpg" alt="Young people reading">
-            </div>
-          </div>
-          <div class="box-right">
-            <div class="case-banner-text">
-              <h2>Learn something new every day</h2>
-              <p>Lorgem ipsum dolor sit amet, consecutor adipiscing elit.</p>
-              <button type="button" name="button">Start here</button>
-            </div>
-          </div>
+<!-- Banner Section-------->
+      <section class="banner color-theme">
+        <img src="./resources/images/banner.jpg">
+        <div class="banner-content">
+          <h2>Learn something new everyday</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#">Start here</a>
         </div>
-      </section id="info">
+      </section>
 
-
-      <section>
-        <div class="box-left">
-          <div class="case-info">
-            <img src="resources/images/information-main.jpg" alt="Male student reading">
-            <h3>It doesn't hurt to keep practicing</h3>
-            <p>Lorgem ipsum dolor sit amet, consecutor adipiscing elit.Lorgem ipsum dolor sit amet, consecutor adipiscing elit.</p>
-            <p>Emanuel, Sr Strategist at Hiring.com</p>
-          </div>
+<!-- Feature Section-------->
+      <section class="features">
+        <div class="feature-main desktop">
+          <img src="./resources/images/information-main.jpg" alt="A student reading a book">
+          <h2>It doesn't hurt to keep practicing</h2>
+          <blockquote>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</blockquote>
+          <br>
+          <p class="caption">Emanual, Sr Strategist at Hiring.com</p>
         </div>
-        <div class="box-right">
-          <div class="case-info-column">
-            <div class="info-row">
-              <div class="info-row-picture">
-                <img src="resources/images/information-orientation.jpg" alt="Orientation">
-              </div>
-              <div class="info-row-text">
-                <h3>Orientation data</h3>
-                <p>Tue 10/11 and Wed 10/12: 8am - 3pm</p>
-                <a href="#">Read more</a>
+
+        <div class="column-grid">
+
+          <div class="feature clickable">
+            <a href="URL OF TARGET"> </a>
+            <img class="desktop" src="./resources/images/information-orientation.jpg" alt="Students walking together in a row">
+            <div class="feature-content">
+              <h3>Orientation date</h3>
+              <p>Tue 10/11 &amp; Wed 10/12: 8am-rpm</p>
+              <a class="caption" href="#">Read more</a>
+            </div>
+          </div><!-- end feature -->
+
+          <div class="feature clickable">
+            <a href="URL OF TARGET"> </a>
+            <img class="desktop" src="./resources/images/information-campus.jpg" alt="Study room with students reading">
+            <div class="feature-content">
+              <h3>Our campus</h3>
+              <p>Find which campus is close by you</p>
+              <a class="caption" href="#">Read more</a>
+            </div>
+          </div><!-- end feature -->
+
+          <div class="feature color-theme clickable">
+            <a href="URL OF TARGET"> </a>
+            <img class="desktop" src="./resources/images/information-guest-lecture.jpg" alt="Students walking together in a row">
+            <div class="feature-content">
+              <h3>Our guest lecture</h3>
+              <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+              <a class="caption" href="#">Read more</a>
+            </div>
+          </div><!-- end feature -->
+        </div><!-- end feature grid -->
+      </section><!-- end section features -->
+
+<!-- Course Section-------->
+      <section class="courses color-theme">
+        <h2>Start learning</h2>
+
+        <div class="course-grid">
+
+          <div class="course-vignette clickable">
+            <a href="URL OF TARGET"> </a>
+            <img src="./resources/images/course-software.jpg" alt="Software">
+            <div class="course-vignette-content">
+              <h3>Software engineering</h3>
+              <div class="course-vignette-content-details">
+                <p class="subhead">Courses</p>
+                <p>Web Development, Mobile Development</p>
               </div>
             </div>
-            <div class="info-row">
-              <div class="info-row-picture">
-                <img src="resources/images/information-orientation.jpg" alt="Orientation">
-              </div>
-              <div class="info-row-text">
-                <h3>Orientation data</h3>
-                <p>Tue 10/11 and Wed 10/12: 8am - 3pm</p>
-                <a href="#">Read more</a>
-              </div>
-            </div>
-            <div class="info-row">
-              <div class="info-row-picture">
-                <img src="resources/images/information-orientation.jpg" alt="Orientation">
-              </div>
-              <div class="info-row-text">
-                <h3>Orientation data</h3>
-                <p>Tue 10/11 and Wed 10/12: 8am - 3pm</p>
-                <a href="#">Read more</a>
+          </div>
+
+          <div class="course-vignette clickable">
+            <a href="URL OF TARGET"> </a>
+            <img src="./resources/images/course-computer-art.jpg">
+            <div class="course-vignette-content">
+              <h3>Computer art</h3>
+              <div class="course-vignette-content-details">
+                <p class="subhead">Courses</p>
+                <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
               </div>
             </div>
+          </div><!-- end vignette -->
+
+          <div class="course-vignette clickable">
+              <a href="URL OF TARGET"> </a>
+            <img src="./resources/images/course-design.jpg">
+            <div class="course-vignette-content">
+              <h3>Design</h3>
+              <div class="course-vignette-content-details">
+                <p class="subhead">Courses</p>
+                <p>User Experience Design, User Research, Visual Design</p>
+              </div>
+            </div>
+          </div><!-- endvignette -->
+
+          <div class="course-vignette clickable">
+            <a href="URL OF TARGET"> </a>
+            <img src="./resources/images/course-data.jpg">
+            <div class="course-vignette-content">
+              <h3>Data</h3>
+              <div class="course-vignette-content-details">
+                <p class="subhead">Courses</p>
+                <p>Data Science, Big Data, SQL, Data Visualization</p>
+              </div>
+            </div>
+          </div><!-- end vignette -->
+
+          <div class="course-vignette clickable">
+            <a href="URL OF TARGET"> </a>
+            <img src="./resources/images/course-business.jpg">
+            <div class="course-vignette-content">
+              <h3>Business</h3>
+              <div class="course-vignette-content-details">
+                <p class="subhead">Courses</p>
+                <p>Product Development, Business Development, Startup</p>
+              </div>
+            </div>
+          </div><!-- end vignette -->
+
+          <div class="course-vignette clickable">
+              <a href="URL OF TARGET"> </a>
+            <img src="./resources/images/course-marketing.jpg">
+            <div class="course-vignette-content">
+              <h3>Marketing</h3>
+              <div class="course-vignette-content-details">
+                <p class="subhead">Courses</p>
+                <p>Analytics, Content Marketing, Mobile Marketing</p>
+              </div>
+            </div>
+          </div><!-- end vignette -->
+
+
+        </div>
+      </section>
+
+      <!-- Thesis Section-------->
+      <section class="thesis">
+        <h2>Thesis exhibit</h2>
+        <div class="thesis-main">
+          <div class="thesis-main-left">
+            <video width="100%" height="auto" controls >
+              <source src="./resources/videos/thesis.mp4" type="video/mp4">
+                Your browser does not support video.
+              </video>
+              <h2>Reimagine urban</h2>
+              <blockquote>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</blockquote>
+          </div>
+
+          <div class="column-grid">
+            <div class="feature clickable">
+              <a href="URL OF TARGET"> </a>
+              <img class="desktop" src="./resources/images/thesis-fisma.jpg" alt="Thesis fisma">
+              <div class="feature-content">
+                <h3>Fisma: Design and Prototype</h3>
+                <p>Designer Showcase of new protorype product</p>
+              </div>
+            </div><!-- end feature -->
+
+            <div class="feature color-theme clickable">
+              <a href="URL OF TARGET"> </a>
+              <img class="desktop" src="./resources/images/thesis-now-and-then.jpg" alt="Thesis history">
+              <div class="feature-content">
+                <h3>Now and then</h3>
+                <p>Research study about New York</p>
+              </div>
+            </div><!-- end feature -->
+
           </div>
         </div>
       </section>
 
-
-      <section class="gray" id="learning">
-        <div class="box-top">
-          <div class="case-learning">
-            <h2>Start learning</h2>
-          </div>
-        </div>
-        <div class="box-bottom">
-          <div class="case-learning-content">
-            <div class="learning-column">
-              <div class="learning-image">
-                <img src="resources/images/course-software" alt="Software">
-              </div>
-              <div class="learning-text">
-                <h3>Software engineering</h3>
-                <h4>Courses</h4>
-                <p>Web Development, Mobile Development</p>
-              </div>
-            </div>
-          </div>
-          <div class="case-learning-content">
-            <div class="learning-column">
-              <div class="learning-image">
-                <img src="resources/images/course-software" alt="Software">
-              </div>
-              <div class="learning-text">
-                <h3>Software engineering</h3>
-                <h4>Courses</h4>
-                <p>Web Development, Mobile Development</p>
-              </div>
-            </div>
-          </div>
-          <div class="case-learning-content">
-            <div class="learning-column">
-              <div class="learning-image">
-                <img src="resources/images/course-software" alt="Software">
-              </div>
-              <div class="learning-text">
-                <h3>Software engineering</h3>
-                <h4>Courses</h4>
-                <p>Web Development, Mobile Development</p>
-              </div>
-            </div>
-          </div>
-          <div class="case-learning-content">
-            <div class="learning-column">
-              <div class="learning-image">
-                <img src="resources/images/course-software" alt="Software">
-              </div>
-              <div class="learning-text">
-                <h3>Software engineering</h3>
-                <h4>Courses</h4>
-                <p>Web Development, Mobile Development</p>
-              </div>
-            </div>
-          </div>
-          <div class="case-learning-content">
-            <div class="learning-column">
-              <div class="learning-image">
-                <img src="resources/images/course-software" alt="Software">
-              </div>
-              <div class="learning-text">
-                <h3>Software engineering</h3>
-                <h4>Courses</h4>
-                <p>Web Development, Mobile Development</p>
-              </div>
-            </div>
-          </div>
-          <div class="case-learning-content">
-            <div class="learning-column">
-              <div class="learning-image">
-                <img src="resources/images/course-software" alt="Software">
-              </div>
-              <div class="learning-text">
-                <h3>Software engineering</h3>
-                <h4>Courses</h4>
-                <p>Web Development, Mobile Development</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="thesis">
-        <div class="box-top">
-          <div class="case-thesis">
-            <h2>Thesis exhibit</h2>
-          </div>
-        </div>
-        <div class="box-bottom">
-          <div class="case-thesis-column">
-            <div class="info-row">
-              <div class="info-row-picture">
-                <img src="resources/images/thesis-fisma.jpg" alt="Fisma">
-              </div>
-              <div class="info-row-text">
-                <h3>Fisma Design and Prototype</h3>
-                <p>Designer showcase of new prototype product</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-    </main>
-
+      <footer>
+        <p>&copy; 2016 Colmar Academy. All rights reserved</p>
+        <p class="desktop"><a href="#">Terms</a><a href="#">Privacy</a></p>
+      </footer>
   </body>
 </html>

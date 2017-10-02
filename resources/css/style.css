@@ -4,23 +4,121 @@
   margin: 0px;
 }
 
+/* --------------- basics --------------- */
+
 html {
-  font-size: 16px;
+  font-size: 18px;
 }
 
-/* CSS for the header */
+body {
+  font-family: 'Merriweather';
+}
+
+h2 {
+  margin: 2.5rem 0;
+  font-size: 2rem;
+  line-height: 1.2em;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+/* --------------- common design elements --------------- */
+
+.color-theme { /* this is to apply a consistent background-color to elements by adding this class to them */
+  background-color: #7D151A;
+  color: white;
+}
+
+.color-theme a {
+  color: inherit;
+}
+
+.column-grid { /*column styled content section*/
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+div.clickable { /*workaround to make entire divs clickable without js*/
+  position: relative;
+}
+
+div.clickable a {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  text-decoration:none; /* Makes sure the link   doesn't get underlined */
+  z-index:10; /* raises anchor tag above everything else in div */
+  background-color:white; /*workaround to make clickable in IE */
+  opacity: 0; /*workaround to make clickable in IE */
+  filter: alpha(opacity=1); /*workaround to make clickable in IE */
+}
+
+.feature { /*reusable content elements with images (left) and text (right) */
+  display: flex;
+  padding: 1rem;
+}
+
+.feature:hover { /*highlight feature in different background color when hovering over*/
+  background-color: #FBA7AB;
+}
+
+.feature img {
+  max-width: 35%;
+  align-self: flex-start;
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 65%;
+  margin-left: 2rem;
+}
+
+.feature-content h3 {
+  padding-bottom: 1rem;
+}
+
+.feature-content p {
+  padding-bottom: 1rem;
+}
+
+/* --------------- header --------------- */
 
 header {
   display: flex;
+  position: fixed;
+  background-color: white;
   width: 100%;
   height: 4rem;
   justify-content: space-between;
   align-items: center;
   padding: 0rem 1.5rem;
+  z-index: 5;
 }
 
 header strong {
-  color: black;
+  color: #6A000F;
 }
 
 .logo {
@@ -51,17 +149,215 @@ nav p:last-of-type {
   padding-right: 0rem;
 }
 
-/* CSS for Main and the 'learn' container */
+/* --------------- main --------------- */
 
 main {
   display: flex;
   flex-direction: column;
+  padding-top: 4rem;
 }
 
-.container {
+/* --------------- banner --------------- */
+.banner {
+  display: flex;
+  align-items: center;
+}
+
+.banner img {
+  padding: 2rem;
+  max-width: 60%;
+}
+
+.banner-content {
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 2rem;
+  margin-left: 1rem;
+}
+
+.banner-content p {
+  font-size: 1.25rem;
+  padding-bottom: 2rem;
+}
+
+/* --------------- features --------------- */
+.features {
   display: flex;
 }
 
-section {
+.feature-main {
+  flex-basis: 60%;
+  padding: 2rem;
+}
+
+/* --------------- courses --------------- */
+
+.courses {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.courses h2 {
+  margin-top: 2.5rem;
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
+}
+
+.course-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2.5rem 4.5rem;
+}
+
+.course-vignette {
+  flex-basis: 30%;
+  padding: 0.5rem;
+  height: auto;
+}
+
+.course-vignette:hover { /*highlight feature in different background color when hovering over*/
+  background-color: #FBA7AB;
+}
+
+
+.course-vignette img {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.course-vignette-content {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  background-color: #540004;
+  width: 100%;
+  height: 10rem;
+}
+
+.course-vignette-content-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 5.5rem;
+}
+
+.course-vignette-content:first-of-type { /*to select h3 and first p in course-vignette-content box */
+  padding-bottom: 0.5rem;
+}
+
+.subhead {
+  text-transform: uppercase;
+}
+
+/* --------------- thesis --------------- */
+
+.thesis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thesis-main {
+  display: flex;
+}
+
+.thesis-main-left {
+  flex-basis: 60%;
+  margin:2rem;
+}
+
+.thesis-grid {
+  display: flex;
+
+}
+
+/* --------------- footer --------------- */
+
+
+footer {
+  display: flex;
+  height: 5rem;
+  font-size: 0.75rem;
+  padding: 0 1.5rem;
+  border-top: 1px solid #ddd;
+}
+
+footer p {
+  padding-top: 2rem;
+}
+
+footer p:first-of-type {
+  flex-grow: 1;
+}
+
+footer a:last-of-type {
+  padding-left: 1rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* --------------- @media --------------- */
+
+@media only screen and (min-width: 600px) { /*--> for screens with a minimum width of 600px*/
+  .media {
+    display: none;
+
+  }
+
+}
+
+/* --------------- for mobile devices --------------- */
+
+@media only screen and (max-width: 600px) { /*--> for screens with a maximum width of 600px*/
+
+  .desktop {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner img {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .feature-grid {
+  flex-basis: 100%;
+  }
+
+  .feature img {
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  .feature  {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+}
+
 }
